@@ -1,5 +1,5 @@
 #!/bin/bash
-source /home/sysop/regionalisasi/config.cfg
+source ~/regionalisasi/config.cfg
 
 if [ "$lokasi_xml" -nt "event2.xml" ]; then
   echo "Ada File event.xml baru!!"
