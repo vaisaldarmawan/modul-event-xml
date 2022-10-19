@@ -28,3 +28,5 @@ chmod +x remote_site/seischeck.sh
 
 line3="1 * * * * ~/remote_site/seischek.sh"
 (crontab -u $(whoami) -l; echo "$line3" ) | crontab -u $(whoami) -
+
+echo "Installasi Selesai !!"
