@@ -9,11 +9,11 @@ echo " >> Proses Installasi akan segera dimulai . . ."
 sleep 1s
 
 sudo apt install -y software-properties-common > /dev/null 2>&1
-echo " >> Menyiapkan Repository (harap menunggu, proses ini mungkin sedikit lebih lama)"
+echo " >> Menyiapkan Repository (harap menunggu)"
 sudo add-apt-repository -y ppa:tomvlk/php-archive > /dev/null 2>&1
 sudo add-apt-repository -y ppa:jczaplicki/xenial-php74-temp > /dev/null 2>&1
 
-echo " >> Update Repository & Package (harap menunggu, proses ini mungkin sedikit lebih lama)"
+echo " >> Update Repository & Package (harap menunggu)"
 sudo apt-get update > /dev/null 2>&1
 
 echo " >> Menginstall php7.4, php7.4-cli, php7.4-xml, php7.4-mysql"
