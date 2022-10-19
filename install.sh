@@ -1,12 +1,12 @@
 #!/bin/bash
-cd ~
-sudo apt install -y software-properties-common
-sudo add-apt-repository -y ppa:jczaplicki/xenial-php74-temp
-sudo apt-get update
-sudo add-apt-repository -y ppa:tomvlk/php-archive
-sudo apt-get update
+cd
+#sudo apt install -y software-properties-common
+#sudo add-apt-repository -y ppa:jczaplicki/xenial-php74-temp
+#sudo apt-get update
+#sudo add-apt-repository -y ppa:tomvlk/php-archive
+#sudo apt-get update
 sudo apt-get install -y php7.4
-sudo apt-get install -y php7.4-cli php7.4-xml
+sudo apt-get install -y php7.4-cli php7.4-xml php7.4-mysql
 sudo apt-get install -y git
 
 git clone https://github.com/vaisaldarmawan/regionalisasi
