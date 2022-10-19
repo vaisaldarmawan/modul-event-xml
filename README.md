@@ -4,7 +4,7 @@
 3. Apabila outputnya `/bin/sh -> dash`, Ubah dahulu shell dari dash ke bash dengan command `$sudo dpkg-reconfigure dash`, Lalu pilih `NO`
 
 # Installasi
-1. Download file `Install.sh` dengan command `$git clone https://raw.githubusercontent.com/vaisaldarmawan/regionalisasi/main/install.sh`
+1. Download file `Install.sh` dengan command `$wget https://raw.githubusercontent.com/vaisaldarmawan/regionalisasi/main/install.sh`
 2. Jalankan program Install.sh dengan command `$sudo sh install.sh`
 3. Edit konfigurasi file sesuai dengan UPT masing-masing di `~/regionalisasi/config.cfg`
 4. Jalankan crontab dengan command `$service cron start`
