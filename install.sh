@@ -62,6 +62,7 @@ line3="*/1 * * * * ~/remote_site/seischek.sh"
 
 echo " >> Installasi Selesai !! << "
 echo " "
+echo " Note :"
 echo " Silahkan edit file 'config.cfg' di dalam folder 'regionalisasi' "
 echo " "
 echo " "
