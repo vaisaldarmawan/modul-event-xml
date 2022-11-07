@@ -41,10 +41,12 @@ chmod +x modul-file/check-folder.sh
 
 echo " >> Memasukan command kedalam crontab"
 sudo sleep 1s
-line1="*/1 * * * * cd ~/regionalisasi/modul-event && sh check-xml.sh"
-line2="*/1 * * * * cd ~/regionalisasi/modul-file && sh check-folder.sh"
+line1="*/1 * * * * cd /home/sysop/regionalisasi/modul-event && sh check-xml.sh"
+line2="*/1 * * * * cd /home/sysop/regionalisasi/modul-file && sh check-folder.sh"
+line3="0 * * * * cd /home/sysop/regionalisasi && sh seischeck.sh"
 (crontab -u $(whoami) -l; echo "$line1" ) | crontab -u $(whoami) -
 (crontab -u $(whoami) -l; echo "$line2" ) | crontab -u $(whoami) -
+(crontab -u $(whoami) -l; echo "$line3" ) | crontab -u $(whoami) -
 
 cd
 
