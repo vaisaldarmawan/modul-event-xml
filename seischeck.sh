@@ -41,8 +41,8 @@ else
    sql="INSERT INTO tbl_mon_harian (id,kode_stasiun,tipe,hdd,waktu,status_spread,status_scmaster,status_scwfparam ) VALUES ('$id','$kode_stasiun','$tipe','$hdd','$datetime','$spread','$scmaster','$scwfparam'); UPDATE tbl_mon_tampil SET shake = $status , hdd_shake = $hdd  WHERE kode_stasiun='$kode_stasiun';"
 fi
 
-mysql -u root --password=Root2107# --database="db_regionalisasi" -h 182.253.200.21 -P 3366 --execute="$sql"
-#scp ${kode_stasiun}.sql root@172.19.1.59:/home/region/${tipe}/
+mysql -u $db_username --password=$db_password --database="$db_name" -h $db_ip -P $db_port --execute="$sql"
+
 
 echo $(date) >> log.txt
 
